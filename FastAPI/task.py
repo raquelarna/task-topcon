@@ -15,14 +15,6 @@ class Todo(BaseModel):
     label: str
     dueDate: str
 
-
-# cursor = db.connect_db()
-# task_list = db.select_only_one_todo(cursor, 1)
-# res_todo = [Todo(id=task_list[0][0], message=str(task_list[0][1]), label=str(task_list[0][2]), dueDate=str(task_list[0][3]))]
-
-
-# tasks_list = [Todo(id=1, message="Brais", label="Moure", dueDate="22"),Todo(id=2, message="oli", label="caracoli", dueDate="15")]
-
 #Conexion a la bd
 con, cur = db.connect_db()
 
